@@ -303,3 +303,108 @@ box-sizing: border-box;
 label {
 font-weight: 600;
 }
+
+.page {
+  padding: 40px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.filters,
+.result-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.filters h2,
+.results h2 {
+  margin-top: 0;
+}
+
+.filters h3 {
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filters select,
+.filters input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.results {
+  min-width: 0;
+}
+
+.result-card {
+  margin-bottom: 28px;
+}
+
+.record-id {
+  font-size: 14px;
+  font-weight: 700;
+  color: #60758f;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid h4 {
+  margin-bottom: 8px;
+}
+
+.grid p {
+  margin: 6px 0;
+}
+
+.note {
+  color: #52616b;
+  margin-bottom: 24px;
+}
+
+.full {
+  width: 100%;
+  margin-top: 24px;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 20px;
+  }
+}
