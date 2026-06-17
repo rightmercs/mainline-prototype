@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainline | Approve Access</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="topbar">
+  <div class="brand">MAINLINE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="record.html">Record</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero small">
+    <h1>Approve Pathway Access</h1>
+    <p>
+      The professional controls what is shared, whether downloads are allowed, and how long access remains active.
+    </p>
+  </section>
+
+  <section class="result-card">
+    <div class="record-id">Incoming Request</div>
+    <h2>ABC Refining requested access to Record ML-1028</h2>
+
+    <h3>Requested Pathways</h3>
+
+    <table style="width:100%">
+      <tr>
+        <th align="left">Pathway</th>
+        <th align="left">Share</th>
+        <th align="left">Download</th>
+      </tr>
+      <tr>
+        <td>Career Pathway</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>Certification Pathway</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>Site Readiness Pathway</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Experience Pathway</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </table>
+
+    <h3>Approved Duration</h3>
+
+    <select>
+      <option>24 Hours</option>
+      <option>7 Days</option>
+      <option selected>30 Days</option>
+      <option>90 Days</option>
+      <option>Permanent</option>
+    </select>
+
+    <h3>Owner Controls</h3>
+
+    <label><input type="checkbox" checked> Allow owner to revoke access at any time</label><br>
+    <label><input type="checkbox" checked> Notify owner when Pathway is viewed</label><br>
+    <label><input type="checkbox" checked> Notify owner when documents are downloaded</label>
+
+    <div class="actions">
+      <a class="button secondary" href="record.html">Deny</a>
+      <a class="button secondary" href="request-access.html">Modify Request</a>
+      <a class="button" href="pathway-builder.html">Approve Access</a>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
