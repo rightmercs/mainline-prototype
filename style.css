@@ -289,3 +289,17 @@ font-size: 36px;
   background: #005f9f;
   color: #ffffff;
 }
+
+.input {
+width: 100%;
+padding: 14px;
+margin-top: 8px;
+margin-bottom: 20px;
+border: 1px solid #d0d7de;
+border-radius: 8px;
+box-sizing: border-box;
+}
+
+label {
+font-weight: 600;
+}
