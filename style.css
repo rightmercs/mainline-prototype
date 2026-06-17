@@ -197,3 +197,182 @@ nav a {
     padding: 20px;
   }
 }
+
+
+.hero-main {
+  background: linear-gradient(135deg, #101820, #1f3b57);
+  color: white;
+  padding: 90px 40px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #9fd3ff;
+  font-weight: bold;
+}
+
+.hero-main h1 {
+  font-size: 56px;
+  line-height: 1.05;
+  margin: 15px 0;
+}
+
+.hero-text {
+  font-size: 20px;
+  max-width: 800px;
+  color: #d8e6f3;
+}
+
+.promise {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+.large {
+  font-size: 16px;
+  padding: 14px 22px;
+}
+
+.section {
+  padding: 60px 40px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.section-lead,
+.center-text {
+  text-align: center;
+  font-size: 18px;
+  color: #52616b;
+  max-width: 850px;
+  margin: 0 auto 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: bold;
+  text-align: center;
+}
+
+.dark {
+  background: #101820;
+  color: white;
+  max-width: none;
+}
+
+.dark .section-lead {
+  color: #d8e6f3;
+}
+
+.dark-card {
+  background: #1f2933;
+  color: white;
+  text-align: left;
+}
+
+.dark-card p {
+  color: #d8e6f3;
+  font-weight: normal;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.compare-card {
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.compare-card.bad {
+  background: #fff5f5;
+}
+
+.compare-card.good {
+  background: #f0fff4;
+}
+
+.compare-card p {
+  font-size: 16px;
+}
+
+.workflow {
+  text-align: center;
+}
+
+.flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.flow div {
+  background: white;
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.flow span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0069b4;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.split-card {
+  background: white;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.split-card h2 {
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .hero-main h1 {
+    font-size: 40px;
+  }
+
+  .card-grid,
+  .comparison,
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
