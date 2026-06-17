@@ -1,1 +1,199 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+.topbar {
+  background: #101820;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.page {
+  padding: 32px 40px;
+}
+
+.hero {
+  background: white;
+  padding: 36px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hero.small {
+  padding: 28px 32px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.hero p {
+  margin: 0;
+  color: #52616b;
+  max-width: 800px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+}
+
+.filters,
+.result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filters h2,
+.results h2 {
+  margin-top: 0;
+}
+
+.filters h3 {
+  margin: 22px 0 10px;
+  font-size: 15px;
+  color: #334e68;
+}
+
+.filters label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.filters select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5df;
+  border-radius: 8px;
+  background: white;
+}
+
+.note {
+  color: #66788a;
+  margin-bottom: 18px;
+}
+
+.result-card {
+  margin-bottom: 22px;
+}
+
+.record-id {
+  font-size: 13px;
+  font-weight: bold;
+  color: #627d98;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.result-card h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.grid h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #102a43;
+}
+
+.grid p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #334e68;
+}
+
+.actions {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+}
+
+.button,
+.primary {
+  display: inline-block;
+  background: #0069b4;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button.secondary {
+  background: #e8eef3;
+  color: #102a43;
+}
+
+.full {
+  width: 100%;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 20px;
+  }
+}
