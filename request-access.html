@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainline | Request Pathway</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="topbar">
+  <div class="brand">MAINLINE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="record.html">Record</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero small">
+    <h1>Request a Pathway</h1>
+    <p>
+      Request access to selected professional information. The owner may approve, modify, or deny this request.
+    </p>
+  </section>
+
+  <section class="result-card">
+    <div class="record-id">Record ML-1028</div>
+    <h2>Requested Pathway</h2>
+
+    <h3>Select Information Requested</h3>
+
+    <label><input type="checkbox" checked> Career Pathway</label><br>
+    <label><input type="checkbox" checked> Certification Pathway</label><br>
+    <label><input type="checkbox"> Site Readiness Pathway</label><br>
+    <label><input type="checkbox"> Experience Pathway</label><br>
+    <label><input type="checkbox"> Full Professional Pathway</label>
+
+    <h3>Access Duration Requested</h3>
+
+    <select>
+      <option>24 Hours</option>
+      <option>7 Days</option>
+      <option selected>30 Days</option>
+      <option>90 Days</option>
+      <option>Permanent</option>
+    </select>
+
+    <h3>Download Request</h3>
+
+    <label><input type="checkbox" checked> Request Resume Download</label><br>
+    <label><input type="checkbox" checked> Request Certification Document Download</label><br>
+    <label><input type="checkbox"> Request Site Readiness Document Download</label>
+
+    <h3>Reason for Request</h3>
+
+    <textarea style="width:100%; min-height:120px; padding:12px; border-radius:8px; border:1px solid #cbd5df;">Reviewing candidate for refinery turnaround inspection support.</textarea>
+
+    <div class="actions">
+      <a class="button secondary" href="record.html">Cancel</a>
+      <a class="button" href="approve-access.html">Submit Request</a>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
