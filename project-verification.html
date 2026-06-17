@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainline | Project Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="topbar">
+  <div class="brand">MAINLINE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="organization.html">Organization</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero small">
+    <h1>Project Verification</h1>
+    <p>
+      Confirm successful completion of an assignment. Mainline does not collect ratings, reviews, or negative performance records.
+    </p>
+  </section>
+
+  <section class="result-card">
+    <div class="record-id">Record ML-1028</div>
+    <h2>Assignment Closeout Verification</h2>
+
+    <h3>1. Did the individual perform the intended work?</h3>
+    <label><input type="radio" name="performed" checked> Yes</label><br>
+    <label><input type="radio" name="performed"> No — End verification</label>
+
+    <h3>2. Did the individual provide satisfactory results?</h3>
+    <label><input type="radio" name="satisfactory" checked> Yes</label><br>
+    <label><input type="radio" name="satisfactory"> No — End verification</label>
+
+    <h3>3. Position successfully performed</h3>
+    <input type="text" value="Senior Welding Inspector" style="width:100%; padding:12px; border-radius:8px; border:1px solid #cbd5df;">
+
+    <h3>4. Industry</h3>
+    <select>
+      <option selected>Refining</option>
+      <option>Petrochemical</option>
+      <option>Pipeline</option>
+      <option>LNG</option>
+      <option>Power</option>
+      <option>Construction</option>
+    </select>
+
+    <h3>5. Project Type</h3>
+    <select>
+      <option selected>Turnaround</option>
+      <option>Capital Project</option>
+      <option>Maintenance</option>
+      <option>New Construction</option>
+      <option>Fabrication</option>
+    </select>
+
+    <h3>6. Activities confirmed</h3>
+    <label><input type="checkbox" checked> Welding Inspection</label><br>
+    <label><input type="checkbox" checked> Procedure Review</label><br>
+    <label><input type="checkbox" checked> QA/QC Documentation</label><br>
+    <label><input type="checkbox"> Contractor Oversight</label><br>
+    <label><input type="checkbox"> Mechanical Inspection</label>
+
+    <div class="actions">
+      <a class="button secondary" href="organization.html">Cancel</a>
+      <a class="button" href="record.html">Submit Verification</a>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
