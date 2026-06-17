@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainline | Pathway Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="topbar">
+  <div class="brand">MAINLINE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="record.html">Record</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero small">
+    <h1>Pathway Builder</h1>
+    <p>Create controlled professional information packages that can be shared, modified, revoked, and time-limited.</p>
+  </section>
+
+  <section class="layout">
+    <aside class="filters">
+      <h2>Pathway Types</h2>
+      <label><input type="radio" name="pathway" checked> Career Pathway</label>
+      <label><input type="radio" name="pathway"> Certification Pathway</label>
+      <label><input type="radio" name="pathway"> Site Readiness Pathway</label>
+      <label><input type="radio" name="pathway"> Experience Pathway</label>
+      <label><input type="radio" name="pathway"> Custom Pathway</label>
+    </aside>
+
+    <section class="results">
+      <article class="result-card">
+        <h2>Career Pathway</h2>
+        <p class="note">Select the information included in this Pathway.</p>
+
+        <h3>Professional Qualifications</h3>
+        <label><input type="checkbox" checked> Certifications</label><br>
+        <label><input type="checkbox" checked> Licenses</label><br>
+        <label><input type="checkbox" checked> Education</label><br>
+        <label><input type="checkbox" checked> Professional Training</label>
+
+        <h3>Site Readiness</h3>
+        <label><input type="checkbox"> TWIC Status</label><br>
+        <label><input type="checkbox"> OSHA Status</label><br>
+        <label><input type="checkbox"> H2S Status</label><br>
+        <label><input type="checkbox"> Fit Test Status</label>
+
+        <h3>Experience</h3>
+        <label><input type="checkbox" checked> Industries</label><br>
+        <label><input type="checkbox" checked> Project Types</label><br>
+        <label><input type="checkbox" checked> Work Activities</label><br>
+        <label><input type="checkbox" checked> Years Experience</label>
+
+        <h3>Trust Evidence</h3>
+        <label><input type="checkbox" checked> Organization Confirmations</label><br>
+        <label><input type="checkbox" checked> Project Verifications</label>
+
+        <h3>Documents</h3>
+        <label><input type="checkbox" checked> Resume</label><br>
+        <label><input type="checkbox"> Certificate Documents</label><br>
+        <label><input type="checkbox"> Site Readiness Documents</label>
+
+        <h3>Default Access Settings</h3>
+        <label><input type="checkbox" checked> Require approval before sharing</label><br>
+        <label><input type="checkbox" checked> Allow access revocation</label><br>
+        <label><input type="checkbox" checked> Notify owner on view/download</label>
+
+        <div class="actions">
+          <a class="button secondary" href="search.html">Back to Search</a>
+          <a class="button" href="organization.html">Save Pathway</a>
+        </div>
+      </article>
+    </section>
+  </section>
+
+</main>
+
+</body>
+</html>
