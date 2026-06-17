@@ -271,3 +271,21 @@ font-size: 38px;
 font-size: 36px;
 }
 }
+
+/* Consistent buttons across the site */
+.button,
+.button.secondary,
+.primary {
+  background: #0078c9;
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.button.secondary:hover,
+.button:hover {
+  background: #005f9f;
+  color: #ffffff;
+}
