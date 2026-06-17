@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mainline | Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MAINLINE</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="pathway-builder.html">Pathways</a>
+      <a href="organization.html">Organizations</a>
+    </nav>
+  </header>
 
+  <main class="page">
+    <section class="hero small">
+      <h1>Search Professional Records</h1>
+      <p>Search by qualifications, site readiness, experience, region, and availability. Identity remains controlled by the professional.</p>
+    </section>
+
+    <section class="layout">
+      <aside class="filters">
+        <h2>Search Filters</h2>
+
+        <h3>Qualifications</h3>
+        <label><input type="checkbox" checked> AWS CWI</label>
+        <label><input type="checkbox" checked> API 510</label>
+        <label><input type="checkbox"> API 570</label>
+        <label><input type="checkbox"> API 653</label>
+        <label><input type="checkbox"> AMPP / NACE</label>
+
+        <h3>Site Readiness</h3>
+        <label><input type="checkbox" checked> TWIC</label>
+        <label><input type="checkbox"> OSHA 30</label>
+        <label><input type="checkbox"> H2S</label>
+        <label><input type="checkbox"> SafeLand</label>
+
+        <h3>Experience</h3>
+        <label><input type="checkbox" checked> Refining</label>
+        <label><input type="checkbox"> Petrochemical</label>
+        <label><input type="checkbox"> Pipeline</label>
+        <label><input type="checkbox" checked> Turnaround</label>
+        <label><input type="checkbox"> Capital Projects</label>
+
+        <h3>Availability</h3>
+        <select>
+          <option>Any</option>
+          <option selected>Within 30 Days</option>
+          <option>Immediate</option>
+          <option>Within 60 Days</option>
+        </select>
+
+        <h3>Region</h3>
+        <select>
+          <option selected>Texas Gulf Coast</option>
+          <option>Southeast United States</option>
+          <option>Midwest</option>
+          <option>Western United States</option>
+        </select>
+
+        <button class="primary full">Search</button>
+      </aside>
+
+      <section class="results">
+        <h2>Search Results</h2>
+        <p class="note">Names, photos, employers, certificate numbers, and contact information are hidden until access is granted.</p>
+
+        <article class="result-card">
+          <div class="record-id">Record ML-1028</div>
+          <h3>Senior Welding / Mechanical Inspection Record</h3>
+
+          <div class="grid">
+            <div>
+              <h4>Qualifications</h4>
+              <p>AWS CWI</p>
+              <p>API 510</p>
+              <p>API 570</p>
+            </div>
+            <div>
+              <h4>Site Readiness</h4>
+              <p>TWIC Active</p>
+              <p>OSHA 30 Current</p>
+            </div>
+            <div>
+              <h4>Experience</h4>
+              <p>15 Years</p>
+              <p>Refining / Petrochemical</p>
+              <p>Turnaround Experience</p>
+            </div>
+            <div>
+              <h4>Trust Evidence</h4>
+              <p>Confirmed by Employer + Client</p>
+              <p>8 Project Verifications</p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="button" href="record.html">View Record</a>
+            <a class="button secondary" href="request-access.html">Request Pathway</a>
+          </div>
+        </article>
+
+        <article class="result-card">
+          <div class="record-id">Record ML-2044</div>
+          <h3>API Mechanical Inspection Record</h3>
+
+          <div class="grid">
+            <div>
+              <h4>Qualifications</h4>
+              <p>API 510</p>
+              <p>API 653</p>
+            </div>
+            <div>
+              <h4>Site Readiness</h4>
+              <p>TWIC Active</p>
+              <p>H2S Current</p>
+            </div>
+            <div>
+              <h4>Experience</h4>
+              <p>11 Years</p>
+              <p>Refining</p>
+              <p>Maintenance / Turnaround</p>
+            </div>
+            <div>
+              <h4>Trust Evidence</h4>
+              <p>Confirmed by Employer</p>
+              <p>4 Project Verifications</p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="button" href="record.html">View Record</a>
+            <a class="button secondary" href="request-access.html">Request Pathway</a>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
