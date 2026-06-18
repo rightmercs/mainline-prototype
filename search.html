@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mainline | Search</title>
+  <title>Mainline | Search Records</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,8 +12,6 @@
   <div class="brand">MAINLINE</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="search.html">Search</a>
-    <a href="pathway-builder.html">Pathways</a>
     <a href="organization.html">Organizations</a>
   </nav>
 </header>
@@ -24,200 +21,167 @@
   <section class="hero small">
     <h1>Search Professional Records</h1>
     <p>
-      Search by qualifications, discipline, site readiness, experience, location, and availability.
-      Personal information remains controlled by the professional.
+      Search by discipline, qualifications, site readiness, role history, scope history, region, and availability.
+      Personal identity remains controlled until access is granted.
     </p>
   </section>
 
-  <section class="layout">
+  <section class="search-layout">
 
-```
-<aside class="filters">
+    <aside class="filters">
+      <h2>Search Filters</h2>
 
-  <h2>Search Filters</h2>
+      <label>Keyword Search</label>
+      <input class="input" type="text" placeholder="Search role, skill, certification, trade...">
 
-  <h3>Keyword Search</h3>
-  <input type="text"
-         placeholder="Search skill, certification, trade, role, discipline..."
-         style="width:100%; padding:10px; border:1px solid #cbd5df; border-radius:8px;">
+      <label>Discipline</label>
+      <select class="input">
+        <option selected>Quality Control / Inspection</option>
+        <option>Engineering</option>
+        <option>Skilled Trades</option>
+        <option>Project Management</option>
+        <option>Safety / HSE</option>
+        <option>Construction Management</option>
+        <option>Operations</option>
+      </select>
 
-  <h3>Discipline</h3>
-  <select>
-    <option selected>Quality Control / Inspection</option>
-    <option>Engineering</option>
-    <option>Skilled Trades</option>
-    <option>Project Management</option>
-    <option>Safety / HSE</option>
-    <option>Construction Management</option>
-    <option>Operations</option>
-  </select>
+      <h3>Qualifications</h3>
+      <label><input type="checkbox" checked> AWS CWI</label>
+      <label><input type="checkbox" checked> API 510</label>
+      <label><input type="checkbox"> API 570</label>
+      <label><input type="checkbox"> API 653</label>
+      <label><input type="checkbox"> ASNT Level II</label>
+      <label><input type="checkbox"> AMPP / NACE</label>
 
-  <h3>Qualifications</h3>
-  <label><input type="checkbox" checked> AWS CWI</label>
-  <label><input type="checkbox" checked> API 510</label>
-  <label><input type="checkbox"> API 570</label>
-  <label><input type="checkbox"> API 653</label>
-  <label><input type="checkbox"> ASNT Level II</label>
-  <label><input type="checkbox"> AMPP / NACE</label>
+      <h3>Site Readiness</h3>
+      <label><input type="checkbox" checked> TWIC</label>
+      <label><input type="checkbox"> OSHA 30</label>
+      <label><input type="checkbox"> H2S</label>
+      <label><input type="checkbox"> SafeLand</label>
 
-  <h3>Site Readiness</h3>
-  <label><input type="checkbox" checked> TWIC</label>
-  <label><input type="checkbox"> OSHA 30</label>
-  <label><input type="checkbox"> H2S</label>
-  <label><input type="checkbox"> SafeLand</label>
+      <h3>Experience</h3>
+      <label><input type="checkbox" checked> Refining</label>
+      <label><input type="checkbox"> Petrochemical</label>
+      <label><input type="checkbox"> Pipeline</label>
+      <label><input type="checkbox" checked> Turnaround</label>
+      <label><input type="checkbox"> Capital Projects</label>
+      <label><input type="checkbox"> Maintenance</label>
+      <label><input type="checkbox"> New Construction</label>
 
-  <h3>Experience</h3>
-  <label><input type="checkbox" checked> Refining</label>
-  <label><input type="checkbox"> Petrochemical</label>
-  <label><input type="checkbox"> Pipeline</label>
-  <label><input type="checkbox" checked> Turnaround</label>
-  <label><input type="checkbox"> Capital Projects</label>
-  <label><input type="checkbox"> Maintenance</label>
-  <label><input type="checkbox"> New Construction</label>
+      <label>Home Region</label>
+      <select class="input">
+        <option selected>Houston, TX</option>
+        <option>Baytown, TX</option>
+        <option>Pasadena, TX</option>
+        <option>Texas City, TX</option>
+        <option>Beaumont, TX</option>
+        <option>Port Arthur, TX</option>
+        <option>Corpus Christi, TX</option>
+        <option>Lake Charles, LA</option>
+        <option>Baton Rouge, LA</option>
+      </select>
 
-  <h3>Home Region</h3>
-  <select>
-    <option selected>Houston, TX</option>
-    <option>Baytown, TX</option>
-    <option>Pasadena, TX</option>
-    <option>Texas City, TX</option>
-    <option>Beaumont, TX</option>
-    <option>Port Arthur, TX</option>
-    <option>Corpus Christi, TX</option>
-    <option>Freeport, TX</option>
-    <option>Lake Jackson, TX</option>
-    <option>Lake Charles, LA</option>
-    <option>Baton Rouge, LA</option>
-    <option>New Orleans, LA</option>
-    <option>Midland, TX</option>
-    <option>Odessa, TX</option>
-    <option>Dallas, TX</option>
-    <option>Fort Worth, TX</option>
-    <option>Austin, TX</option>
-    <option>San Antonio, TX</option>
-  </select>
+      <h3>Willing To Work</h3>
+      <label><input type="checkbox" checked> Local</label>
+      <label><input type="checkbox" checked> Texas</label>
+      <label><input type="checkbox" checked> Louisiana</label>
+      <label><input type="checkbox"> Gulf Coast</label>
+      <label><input type="checkbox"> Nationwide</label>
+      <label><input type="checkbox"> Remote / Travel</label>
 
-  <h3>Willing To Work</h3>
-  <label><input type="checkbox" checked> Local</label>
-  <label><input type="checkbox" checked> Texas</label>
-  <label><input type="checkbox" checked> Louisiana</label>
-  <label><input type="checkbox"> Gulf Coast</label>
-  <label><input type="checkbox"> Nationwide</label>
-  <label><input type="checkbox"> International</label>
-  <label><input type="checkbox"> Remote / Travel</label>
+      <label>Availability</label>
+      <select class="input">
+        <option>Any</option>
+        <option selected>Within 30 Days</option>
+        <option>Available Now</option>
+        <option>Within 60 Days</option>
+        <option>Within 90 Days</option>
+      </select>
 
-  <h3>Availability</h3>
-  <select>
-    <option>Any</option>
-    <option selected>Within 30 Days</option>
-    <option>Immediate</option>
-    <option>Within 60 Days</option>
-    <option>Within 90 Days</option>
-  </select>
+      <button class="button full">Search</button>
+    </aside>
 
-  <button class="primary full">Search</button>
+    <section class="results">
+      <h2>Search Results</h2>
+      <p class="note">
+        Names, employers, contact information, and credential numbers remain hidden until access is granted.
+      </p>
 
-</aside>
+      <article class="result-card">
+        <div class="record-id">Record ML-1028</div>
+        <h3>Inspection Discipline Record</h3>
 
-<section class="results">
+        <div class="result-grid">
+          <div>
+            <h4>Qualifications</h4>
+            <p>AWS CWI</p>
+            <p>API 510</p>
+            <p>API 570</p>
+          </div>
 
-  <h2>Search Results</h2>
+          <div>
+            <h4>Site Readiness</h4>
+            <p>TWIC Active</p>
+            <p>OSHA 30 Current</p>
+          </div>
 
-  <p class="note">
-    Names, employers, contact information, and credential numbers remain hidden until access is granted.
-  </p>
+          <div>
+            <h4>Role History</h4>
+            <p>Senior Welding Inspector</p>
+            <p>Mechanical Inspector</p>
+          </div>
 
-  <article class="result-card">
+          <div>
+            <h4>Scope History</h4>
+            <p>12 Scopes Recorded</p>
+            <p>8 Scopes Verified</p>
+            <p>Confirmed by Employer + Client</p>
+          </div>
+        </div>
 
-    <div class="record-id">Record ML-1028</div>
+        <div class="actions">
+          <a class="button" href="record.html">View Record</a>
+          <a class="button" href="request-access.html">Request Pathway</a>
+        </div>
+      </article>
 
-    <h3>Inspection Discipline Record</h3>
+      <article class="result-card">
+        <div class="record-id">Record ML-2044</div>
+        <h3>Mechanical Inspection Record</h3>
 
-    <div class="grid">
+        <div class="result-grid">
+          <div>
+            <h4>Qualifications</h4>
+            <p>API 510</p>
+            <p>API 653</p>
+          </div>
 
-      <div>
-        <h4>Qualifications</h4>
-        <p>AWS CWI</p>
-        <p>API 510</p>
-        <p>API 570</p>
-      </div>
+          <div>
+            <h4>Site Readiness</h4>
+            <p>TWIC Active</p>
+            <p>H2S Current</p>
+          </div>
 
-      <div>
-        <h4>Site Readiness</h4>
-        <p>TWIC Active</p>
-        <p>OSHA 30 Current</p>
-      </div>
+          <div>
+            <h4>Role History</h4>
+            <p>Mechanical Inspector</p>
+            <p>API Inspector</p>
+          </div>
 
-      <div>
-        <h4>Experience</h4>
-        <p>15 Years</p>
-        <p>Refining</p>
-        <p>Petrochemical</p>
-        <p>Turnaround Experience</p>
-      </div>
+          <div>
+            <h4>Scope History</h4>
+            <p>7 Scopes Recorded</p>
+            <p>4 Scopes Verified</p>
+            <p>Confirmed by Employer</p>
+          </div>
+        </div>
 
-      <div>
-        <h4>Project Verification</h4>
-        <p>12 Projects Listed</p>
-        <p>8 Projects Verified</p>
-        <p>Confirmed by Employer + Client</p>
-      </div>
-
-    </div>
-
-    <div class="actions">
-      <a class="button" href="record.html">View Record</a>
-      <a class="button secondary" href="request-access.html">Request Pathway</a>
-    </div>
-
-  </article>
-
-  <article class="result-card">
-
-    <div class="record-id">Record ML-2044</div>
-
-    <h3>Mechanical Inspection Record</h3>
-
-    <div class="grid">
-
-      <div>
-        <h4>Qualifications</h4>
-        <p>API 510</p>
-        <p>API 653</p>
-      </div>
-
-      <div>
-        <h4>Site Readiness</h4>
-        <p>TWIC Active</p>
-        <p>H2S Current</p>
-      </div>
-
-      <div>
-        <h4>Experience</h4>
-        <p>11 Years</p>
-        <p>Refining</p>
-        <p>Maintenance</p>
-        <p>Turnaround</p>
-      </div>
-
-      <div>
-        <h4>Project Verification</h4>
-        <p>7 Projects Listed</p>
-        <p>4 Projects Verified</p>
-        <p>Confirmed by Employer</p>
-      </div>
-
-    </div>
-
-    <div class="actions">
-      <a class="button" href="record.html">View Record</a>
-      <a class="button secondary" href="request-access.html">Request Pathway</a>
-    </div>
-
-  </article>
-
-</section>
-```
+        <div class="actions">
+          <a class="button" href="record.html">View Record</a>
+          <a class="button" href="request-access.html">Request Pathway</a>
+        </div>
+      </article>
+    </section>
 
   </section>
 
