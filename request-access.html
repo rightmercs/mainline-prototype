@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mainline | Request Pathway</title>
+  <title>Mainline | Request Pathway Access</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,46 +20,82 @@
 <main class="page">
 
   <section class="hero small">
-    <h1>Request a Pathway</h1>
+    <div class="record-id">Record ML-1028</div>
+    <h1>Request Pathway Access</h1>
     <p>
-      Request access to selected professional information. The owner may approve, modify, or deny this request.
+      Request access to selected professional information. The professional controls approval, duration, download permissions, and client presentation.
     </p>
   </section>
 
   <section class="result-card">
-    <div class="record-id">Record ML-1028</div>
-    <h2>Requested Pathway</h2>
+    <h2>Requesting Organization</h2>
 
-    <h3>Select Information Requested</h3>
+    <label>Organization Name</label>
+    <input class="input" type="text" value="ABC Staffing Services">
 
-    <label><input type="checkbox" checked> Career Pathway</label><br>
-    <label><input type="checkbox" checked> Certification Pathway</label><br>
-    <label><input type="checkbox"> Site Readiness Pathway</label><br>
-    <label><input type="checkbox"> Experience Pathway</label><br>
-    <label><input type="checkbox"> Full Professional Pathway</label>
+    <label>Requestor Name</label>
+    <input class="input" type="text" value="John Smith">
 
-    <h3>Access Duration Requested</h3>
+    <label>Requestor Email</label>
+    <input class="input" type="email" value="john.smith@example.com">
 
-    <select>
+    <label>Request Purpose</label>
+    <select class="input">
+      <option>Employment Opportunity</option>
+      <option selected>Contractor Qualification</option>
+      <option>Project Assignment</option>
+      <option>Client Submission</option>
+      <option>Other</option>
+    </select>
+  </section>
+
+  <section class="result-card">
+    <h2>Requested Pathways</h2>
+
+    <label><input type="checkbox" checked> Contact Pathway</label>
+    <label><input type="checkbox" checked> Career Pathway</label>
+    <label><input type="checkbox" checked> Certification Pathway</label>
+    <label><input type="checkbox"> Site Readiness Pathway</label>
+    <label><input type="checkbox"> Custom Pathway</label>
+
+    <h3>Requested Access Duration</h3>
+    <select class="input">
       <option>24 Hours</option>
       <option>7 Days</option>
       <option selected>30 Days</option>
       <option>90 Days</option>
       <option>Permanent</option>
     </select>
+  </section>
+
+  <section class="result-card">
+    <h2>Requested Permissions</h2>
 
     <h3>Download Request</h3>
+    <label><input type="radio" name="download" checked> View Only</label>
+    <label><input type="radio" name="download"> View + Download</label>
 
-    <label><input type="checkbox" checked> Request Resume Download</label><br>
-    <label><input type="checkbox" checked> Request Certification Document Download</label><br>
-    <label><input type="checkbox"> Request Site Readiness Document Download</label>
+    <h3>Client Presentation Request</h3>
+    <label><input type="radio" name="client" checked> Internal Use Only</label>
+    <label><input type="radio" name="client"> Request Permission To Present To A Named Client</label>
 
-    <h3>Reason for Request</h3>
+    <label>Named Client</label>
+    <input class="input" type="text" placeholder="Example: XYZ Refining">
 
-    <textarea style="width:100%; min-height:120px; padding:12px; border-radius:8px; border:1px solid #cbd5df;">Reviewing candidate for refinery turnaround inspection support.</textarea>
+    <p class="note">
+      Client presentation access, if approved, is view-only inside Mainline. Downstream clients cannot download, export, forward, or share Pathway information.
+    </p>
+  </section>
+
+  <section class="result-card">
+    <h2>Message To Professional</h2>
+
+    <textarea class="input" style="min-height:140px;">
+Requesting access to review qualifications and certification records for contractor qualification review.
+    </textarea>
 
     <div class="actions">
-      <a class="button secondary" href="record.html">Cancel</a>
+      <a class="button" href="record.html">Cancel</a>
       <a class="button" href="approve-access.html">Submit Request</a>
     </div>
   </section>
