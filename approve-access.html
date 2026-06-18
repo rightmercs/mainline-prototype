@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mainline | Approve Access</title>
+  <title>Mainline | Approve Pathway Access</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,74 +12,101 @@
   <div class="brand">MAINLINE</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="search.html">Search</a>
     <a href="record.html">Record</a>
+    <a href="search.html">Search</a>
   </nav>
 </header>
 
 <main class="page">
 
   <section class="hero small">
+    <div class="record-id">Incoming Request</div>
     <h1>Approve Pathway Access</h1>
     <p>
-      The professional controls what is shared, whether downloads are allowed, and how long access remains active.
+      Review the request, approve only what is needed, and control access duration, downloads, and client presentation.
     </p>
   </section>
 
   <section class="result-card">
-    <div class="record-id">Incoming Request</div>
-    <h2>ABC Refining requested access to Record ML-1028</h2>
+    <h2>Request Summary</h2>
 
-    <h3>Requested Pathways</h3>
+    <div class="result-grid">
+      <div>
+        <h4>Organization</h4>
+        <p>ABC Staffing Services</p>
+      </div>
 
-    <table style="width:100%">
-      <tr>
-        <th align="left">Pathway</th>
-        <th align="left">Share</th>
-        <th align="left">Download</th>
-      </tr>
-      <tr>
-        <td>Career Pathway</td>
-        <td><input type="checkbox" checked></td>
-        <td><input type="checkbox" checked></td>
-      </tr>
-      <tr>
-        <td>Certification Pathway</td>
-        <td><input type="checkbox" checked></td>
-        <td><input type="checkbox" checked></td>
-      </tr>
-      <tr>
-        <td>Site Readiness Pathway</td>
-        <td><input type="checkbox"></td>
-        <td><input type="checkbox"></td>
-      </tr>
-      <tr>
-        <td>Experience Pathway</td>
-        <td><input type="checkbox" checked></td>
-        <td><input type="checkbox"></td>
-      </tr>
-    </table>
+      <div>
+        <h4>Requestor</h4>
+        <p>John Smith</p>
+      </div>
+
+      <div>
+        <h4>Purpose</h4>
+        <p>Contractor Qualification</p>
+      </div>
+
+      <div>
+        <h4>Requested Duration</h4>
+        <p>30 Days</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="result-card">
+    <h2>Approve Pathways</h2>
+
+    <label><input type="checkbox" checked> Contact Pathway</label>
+    <label><input type="checkbox" checked> Career Pathway</label>
+    <label><input type="checkbox" checked> Certification Pathway</label>
+    <label><input type="checkbox"> Site Readiness Pathway</label>
+    <label><input type="checkbox"> Custom Pathway</label>
 
     <h3>Approved Duration</h3>
-
-    <select>
+    <select class="input">
       <option>24 Hours</option>
       <option>7 Days</option>
       <option selected>30 Days</option>
       <option>90 Days</option>
       <option>Permanent</option>
     </select>
+  </section>
 
-    <h3>Owner Controls</h3>
+  <section class="result-card">
+    <h2>Permission Controls</h2>
 
-    <label><input type="checkbox" checked> Allow owner to revoke access at any time</label><br>
-    <label><input type="checkbox" checked> Notify owner when Pathway is viewed</label><br>
-    <label><input type="checkbox" checked> Notify owner when documents are downloaded</label>
+    <h3>First-Party Access</h3>
+    <p class="note">
+      These permissions apply only to the approved organization receiving access directly from you.
+    </p>
+
+    <label><input type="radio" name="download" checked> View Only</label>
+    <label><input type="radio" name="download"> View + Download</label>
+
+    <h3>Client Presentation</h3>
+    <label><input type="radio" name="client" checked> Internal Use Only</label>
+    <label><input type="radio" name="client"> Allow Presentation To Named Client</label>
+
+    <label>Named Client Approved</label>
+    <input class="input" type="text" value="XYZ Refining">
+
+    <p class="note">
+      Client presentation is view-only inside Mainline. Downstream clients cannot download, export, forward, or share Pathway information.
+    </p>
+  </section>
+
+  <section class="result-card">
+    <h2>Owner Controls</h2>
+
+    <label><input type="checkbox" checked> Allow access revocation at any time</label>
+    <label><input type="checkbox" checked> Notify me when Pathway is viewed</label>
+    <label><input type="checkbox" checked> Notify me when documents are downloaded</label>
+    <label><input type="checkbox" checked> Notify me if Pathway is presented to client</label>
 
     <div class="actions">
-      <a class="button secondary" href="record.html">Deny</a>
-      <a class="button secondary" href="request-access.html">Modify Request</a>
-      <a class="button" href="pathway-builder.html">Approve Access</a>
+      <a class="button" href="record.html">Decline</a>
+      <a class="button" href="request-access.html">Modify</a>
+      <a class="button" href="active-pathways.html">Approve Access</a>
     </div>
   </section>
 
