@@ -12,8 +12,9 @@
   <div class="brand">MAINLINE</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="search.html">Search</a>
-    <a href="pathway-builder.html">Pathways</a>
+    <a href="organization.html">Dashboard</a>
+    <a href="search.html">Search Records</a>
+    <a href="pathway-view.html">Approved Pathways</a>
   </nav>
 </header>
 
@@ -22,71 +23,238 @@
   <section class="hero small">
     <h1>Organization Dashboard</h1>
     <p>
-      Verified organizations can confirm experience, verify projects, and manage workforce Pathways.
+      Search professional records, manage Pathway requests, review approved qualification packages,
+      present approved packages to named clients, and verify completed scopes.
     </p>
   </section>
 
   <section class="result-card">
+    <h2>Organization Summary</h2>
 
-    <h2>Organization Information</h2>
-
-    <p><strong>Organization:</strong> ABC Refining</p>
-    <p><strong>Type:</strong> Client</p>
-    <p><strong>Status:</strong> Verified Organization</p>
-
+    <div class="verification-banner">
+      <div>
+        <span class="big-number">3</span>
+        <p>Pending Requests</p>
+      </div>
+      <div>
+        <span class="big-number">6</span>
+        <p>Approved Pathways</p>
+      </div>
+      <div>
+        <span class="big-number">2</span>
+        <p>Scope Verifications</p>
+      </div>
+    </div>
   </section>
 
-  <section class="result-card">
-
-    <h2>Professional Verification Request</h2>
-
-    <p><strong>Record:</strong> ML-1028</p>
-
-    <h3>Experience Confirmation</h3>
-
-    <label><input type="checkbox" checked> Refining Experience</label><br>
-    <label><input type="checkbox" checked> Turnaround Experience</label><br>
-    <label><input type="checkbox" checked> Welding Inspection</label><br>
-    <label><input type="checkbox"> Procedure Review</label><br>
-    <label><input type="checkbox"> QA/QC Documentation</label>
-
-    <div class="actions">
-      <a class="button" href="project-verification.html">Continue Verification</a>
+  <section class="section split">
+    <div class="split-card">
+      <h2>Search Records</h2>
+      <p>Find professionals by discipline, role, qualifications, region, availability, and scope history.</p>
+      <a class="button" href="search.html">Search Professional Records</a>
     </div>
 
+    <div class="split-card">
+      <h2>Pathway Requests</h2>
+      <p>Track submitted requests, pending approvals, approved access, and declined requests.</p>
+      <a class="button" href="#requests">View Requests</a>
+    </div>
+
+    <div class="split-card">
+      <h2>Approved Pathways</h2>
+      <p>Review approved qualification packages inside Mainline under owner-controlled access.</p>
+      <a class="button" href="pathway-view.html">View Approved Package</a>
+    </div>
+
+    <div class="split-card">
+      <h2>Scope Verification</h2>
+      <p>Confirm completed roles and scopes without ratings, reviews, or endorsements.</p>
+      <a class="button" href="project-verification.html">Verify Scope</a>
+    </div>
+  </section>
+
+  <section class="result-card" id="requests">
+    <h2>Pending Pathway Requests</h2>
+
+    <div class="scope-row expanded">
+      <div>
+        <strong>Record ML-1028</strong>
+        <p>Senior Welding Inspector Qualification Package</p>
+      </div>
+      <div>
+        <strong>Requested</strong>
+        <p>Career + Certification</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Pending Owner Approval</p>
+      </div>
+      <div>
+        <a class="button" href="request-access.html">View Request</a>
+      </div>
+    </div>
+
+    <div class="scope-row expanded">
+      <div>
+        <strong>Record ML-2044</strong>
+        <p>Mechanical Inspector Qualification Package</p>
+      </div>
+      <div>
+        <strong>Requested</strong>
+        <p>Contact + Site Readiness</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Pending Owner Approval</p>
+      </div>
+      <div>
+        <a class="button" href="request-access.html">View Request</a>
+      </div>
+    </div>
   </section>
 
   <section class="result-card">
+    <h2>Approved Pathways</h2>
 
-    <h2>Workforce Overview</h2>
+    <div class="scope-row expanded">
+      <div>
+        <strong>Record ML-1028</strong>
+        <p>Senior Welding Inspector Qualification Package</p>
+      </div>
+      <div>
+        <strong>Access</strong>
+        <p>View Only</p>
+      </div>
+      <div>
+        <strong>Expires</strong>
+        <p>28 Days</p>
+      </div>
+      <div>
+        <a class="button" href="pathway-view.html">Open Package</a>
+      </div>
+    </div>
 
-    <table style="width:100%">
-      <tr>
-        <th align="left">Record</th>
-        <th align="left">Status</th>
-        <th align="left">Project Verifications</th>
-      </tr>
+    <div class="scope-row expanded">
+      <div>
+        <strong>Record ML-3017</strong>
+        <p>API Inspector Certification Package</p>
+      </div>
+      <div>
+        <strong>Access</strong>
+        <p>View + Download</p>
+      </div>
+      <div>
+        <strong>Expires</strong>
+        <p>12 Days</p>
+      </div>
+      <div>
+        <a class="button" href="pathway-view.html">Open Package</a>
+      </div>
+    </div>
+  </section>
 
-      <tr>
-        <td>ML-1028</td>
-        <td>Active</td>
-        <td>8</td>
-      </tr>
+  <section class="result-card">
+    <h2>Client Presentations</h2>
 
-      <tr>
-        <td>ML-2044</td>
-        <td>Active</td>
-        <td>4</td>
-      </tr>
+    <div class="scope-row expanded">
+      <div>
+        <strong>Senior Welding Inspector Package</strong>
+        <p>Presented To: XYZ Refining</p>
+      </div>
+      <div>
+        <strong>Client Access</strong>
+        <p>View Only</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Active</p>
+      </div>
+      <div>
+        <a class="button" href="pathway-view.html">View Presentation</a>
+      </div>
+    </div>
 
-      <tr>
-        <td>ML-3017</td>
-        <td>Pending</td>
-        <td>0</td>
-      </tr>
+    <p class="note">
+      Client presentations are allowed only when approved by the professional owner.
+      Downstream clients receive view-only access inside Mainline and cannot download, export, forward, or share packages.
+    </p>
+  </section>
 
-    </table>
+  <section class="result-card">
+    <h2>Scope Verification Requests</h2>
 
+    <div class="scope-row expanded">
+      <div>
+        <strong>Record ML-1028</strong>
+        <p>Senior Welding Inspector — Refinery Turnaround</p>
+      </div>
+      <div>
+        <strong>Requested By</strong>
+        <p>Professional Owner</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Awaiting Organization Confirmation</p>
+      </div>
+      <div>
+        <a class="button" href="project-verification.html">Review</a>
+      </div>
+    </div>
+
+    <div class="scope-row expanded">
+      <div>
+        <strong>Record ML-2044</strong>
+        <p>Mechanical Inspector — Maintenance Program</p>
+      </div>
+      <div>
+        <strong>Requested By</strong>
+        <p>Professional Owner</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Awaiting Organization Confirmation</p>
+      </div>
+      <div>
+        <a class="button" href="project-verification.html">Review</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="result-card">
+    <h2>Recent Organization Activity</h2>
+
+    <div class="scope-row">
+      <div>
+        <strong>Today</strong>
+        <p>Senior Welding Inspector Qualification Package opened.</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Logged</p>
+      </div>
+    </div>
+
+    <div class="scope-row">
+      <div>
+        <strong>Yesterday</strong>
+        <p>Pathway request submitted for Record ML-2044.</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Pending</p>
+      </div>
+    </div>
+
+    <div class="scope-row">
+      <div>
+        <strong>June 15</strong>
+        <p>Scope verification completed for Senior Welding Inspector.</p>
+      </div>
+      <div>
+        <strong>Status</strong>
+        <p>Complete</p>
+      </div>
+    </div>
   </section>
 
 </main>
